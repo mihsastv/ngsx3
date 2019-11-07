@@ -1,0 +1,15 @@
+<div>
+
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" #name>
+    <small id="emailHelp" class="form-text text-muted">Введите название книги</small>
+  <hr>
+    <label for="exampleInputEmail1">Url</label>
+    <input type="text" id="exampleInputurl" aria-describedby="urlHelp" placeholder="Enter name" #url>
+    <small id="urlHelp" class="form-text text-muted">Url</small>
+  <hr>
+    <button type="button" class="btn btn-primary" (click)="addTutorial(name.value, url.value)">Сохранить</button>
+</div>
+
+
+
