@@ -1,14 +1,23 @@
-<div>
+<div class="container">
+  <div class="row">
+    <div class="col background-color: #DAEEFF;">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" #name>
+      <small id="emailHelp" class="form-text text-muted">Введите название книги</small>
+    </div>
+    <div class="col block2">
+      <label for="exampleInputurl">Url</label>
+      <input type="text" id="exampleInputurl" aria-describedby="urlHelp" placeholder="Enter name" #url>
+      <small id="urlHelp" class="form-text text-muted">Url</small>
+    </div>
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-primary" (click)="addTutorial(name.value, url.value)">
+      Сохранить
+    </button>
+  </div>
 
-    <label for="exampleInputEmail1">Name</label>
-    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" #name>
-    <small id="emailHelp" class="form-text text-muted">Введите название книги</small>
-  <hr>
-    <label for="exampleInputEmail1">Url</label>
-    <input type="text" id="exampleInputurl" aria-describedby="urlHelp" placeholder="Enter name" #url>
-    <small id="urlHelp" class="form-text text-muted">Url</small>
-  <hr>
-    <button type="button" class="btn btn-primary" (click)="addTutorial(name.value, url.value)">Сохранить</button>
+<div class="background-color: #DAEEFF;"><p>w</p> </div>
 </div>
 
 

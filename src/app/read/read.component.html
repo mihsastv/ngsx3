@@ -1,4 +1,4 @@
-<div *ngIf="tutorials$">
+<div class="margin-top: 50px; margin-left: 50px" *ngIf="tutorials$">
     <h3>Tutorials</h3>
   <ul>
     <li (click)="delTutorial(tutorial.name)" *ngFor="let tutorial of tutorials$ | async">

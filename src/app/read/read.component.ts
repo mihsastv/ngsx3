@@ -16,7 +16,7 @@ export class ReadComponent implements OnInit {
   @Select(TutorialState.getTutorials) tutorials$: Observable<Tutorial>
 
   constructor(private store: Store) {
-    //this.tutorials$ = this.store.select((state => state.tutorials.tutorials))
+  //this.tutorials$ = this.store.select((state => state.tutorials.tutorials))
   }
 
   delTutorial(name) {
